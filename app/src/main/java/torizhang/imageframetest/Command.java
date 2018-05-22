@@ -11,5 +11,5 @@ public abstract class Command {
     }
 
     public String commandName;
-    abstract void doCommand();
+    abstract void execute();
 }

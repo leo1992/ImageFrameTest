@@ -2,14 +2,12 @@ package torizhang.imageframetest;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 /**
  * Created by zhangying on 5/21/18.
@@ -44,7 +42,7 @@ public class CommandAdapter extends RecyclerView.Adapter {
         commandItemHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                command.doCommand();
+                command.execute();
             }
         });
     }
